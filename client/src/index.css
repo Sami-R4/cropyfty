@@ -1,3 +1,22 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url('./assets/fonts/INTER.TTF');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url('./assets/fonts/POPPINS-LIGHT.TTF');
+}
