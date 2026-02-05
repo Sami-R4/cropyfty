@@ -1,8 +1,16 @@
+@import "tailwindcss";
 
+@theme {
+  --color-primary: #22a45d;
+  --color-secondary: #64db68ff;
+  --color-background: #f7f9f8;
+  --color-txt: #1f2933;
+  --color-error: #d64545;
+  --color-gold: #ffd700;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Poppins", system-ui, sans-serif;
+}
 
 body, html {
     margin: 0;
@@ -11,12 +19,3 @@ body, html {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: "Inter";
-    src: url('./assets/fonts/INTER.TTF');
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url('./assets/fonts/POPPINS-LIGHT.TTF');
-}
