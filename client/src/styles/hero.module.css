@@ -1,5 +1,5 @@
 
-
+/* Hero Image */
 .heroContainer{
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../assets/images/hero-bg2.png');
     background-position: center;
@@ -7,3 +7,18 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+/* Logo Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floatSlow{
+  animation: floatSlow 3s ease-in-out infinite;
+}
+
