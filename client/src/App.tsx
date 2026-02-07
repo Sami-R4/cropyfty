@@ -9,6 +9,8 @@ import ChooseRole from './screens/ChooseRole';
 import LoginScreen from './screens/LoginScreen';
 import RegisterBuyer from './screens/RegisterBuyer';
 import RegisterSeller from './screens/RegisterSeller';
+import ForgotPwdScreen from './screens/ForgotPwdScreen';
+
 
 function App() {
 
@@ -20,9 +22,10 @@ function App() {
       <Route path="/login" element={<LoginScreen/>}/>
       <Route path="/registerBuyer" element={<RegisterBuyer/>}/>
       <Route path="/registerSeller" element={<RegisterSeller/>}/>
+      <Route path="/forgotPassword" element={<ForgotPwdScreen/>}/>
     </Routes>
     </BrowserRouter>
   );
 }
 
-export default App
+export default App;

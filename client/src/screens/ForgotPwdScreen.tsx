@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BreadCrumb from "../components/BreadCrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faUser, faEnvelope, faLock, faEye, faEyeSlash, faCaretRight} from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
 
-export default function LoginScreen() {
-
-    const navigate  = useNavigate();
+export default function ForgotPwdScreen() {
 
     return (
         <div className="min-h-screen bg-[var(--color-background)] flex flex-col">
@@ -19,49 +16,35 @@ export default function LoginScreen() {
                 <div className="w-full max-w-sm bg-white rounded-3xl shadow-xl p-6">
                     
                     <h2 className="text-3xl font-extrabold text-center text-[var(--color-txt)]">
-                        Welcome Back
+                        Forgot Your Password
                     </h2>
                     <p className="text-center text-sm text-gray-500 mt-1 mb-6">
-                        Login to your account
+                        Enter the new password
                     </p>
 
                     <form className="space-y-4">
-            {/* Email */}
-            <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)] my-6">
-              <FontAwesomeIcon icon={faEnvelope} className="text-primary mr-2" />
+
+            {/* New Password */}
+            <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)] my-8">
+              <FontAwesomeIcon icon={faLock} className="text-primary mr-2" />
               <div className="w-px h-6 bg-primary mr-2" />
               <input
                 type="email"
-                placeholder="Enter Your Email"
+                placeholder="Enter New Password"
                 className="flex-1 outline-none"
               />
             </div>
 
-            {/* Password */}
+            {/* Confirm New Password */}
             <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)] my-6">
               <FontAwesomeIcon icon={faLock} className="text-primary mr-2" />
               <div className="w-px h-6 bg-primary mr-2" />
               <input
-                type="password"
-                placeholder="Enter Your Password"
+                type="email"
+                placeholder="Confirm New Password"
                 className="flex-1 outline-none"
               />
-              <FontAwesomeIcon
-                icon={faEyeSlash}
-                className="text-gray-400 ml-2 cursor-pointer"
-              />
             </div>
-
-                        {/* Forgot Password */}
-                        <div className="text-right">
-                            <button
-                                onClick={() => navigate('/forgotPassword')}
-                                type="button"
-                                className="text-sm text-[var(--color-primary)] hover:underline"
-                            >
-                                Forgot password?
-                            </button>
-                        </div>
 
                         {/* Submit */}
                         <button
@@ -73,20 +56,9 @@ export default function LoginScreen() {
                                 transition
                             "
                         >
-                            Login
+                            Change Password
                         </button>
                     </form>
-
-                    {/* Footer */}
-                    <p className="text-center text-sm text-gray-500 mt-6">
-                        Don’t have an account?{" "}
-                        <Link
-                            to="/chooseRole"
-                            className="text-[var(--color-primary)] font-semibold hover:underline"
-                        >
-                            Sign up
-                        </Link>
-                    </p>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import BreadCrumb from "../components/BreadCrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faUser, faEnvelope, faLock, faEye, faEyeSlash, faCaretRight} from "@fortawesome/free-solid-svg-icons"
 
+
 export default function RegisterSeller() {
   return (
     <div className="min-h-screen bg-[var(--color-background)] flex flex-col">
@@ -23,7 +24,7 @@ export default function RegisterSeller() {
           </p>
 
           {/* Form */}
-          <form className="space-y-4">
+          <form className="space-y-6">
 
             {/* Full Name */}
             <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)]">
@@ -78,15 +79,13 @@ export default function RegisterSeller() {
             </div>
 
             {/* Submit */}
-            <div className="flex items-center justify-end mt-2">
             <button
               type="submit"
-              className="w-50 py-3 rounded-3xl font-semibold text-white
+              className="w-full py-3 rounded-3xl font-semibold text-white
                          bg-[var(--color-primary)] hover:bg-green-600 transition"
             >
-              Next <FontAwesomeIcon icon={faCaretRight}/>
+              Submit 
             </button>
-            </div>
           </form>
 
           {/* Footer */}
