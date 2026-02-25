@@ -30,11 +30,28 @@ export default function ForgotPwdScreen() {
               <div className="w-px h-6 bg-primary mr-2" />
               <input
                 type="email"
-                placeholder="Enter New Password"
+                placeholder="Enter Account Email"
+
+
+
+
+
+                
                 className="flex-1 outline-none"
               />
             </div>
 
+            {/* New Password */}
+            <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)] my-8">
+              <FontAwesomeIcon icon={faLock} className="text-primary mr-2" />
+              <div className="w-px h-6 bg-primary mr-2" />
+              <input
+                type="email"
+                placeholder="Enter New Password"
+                className="flex-1 outline-none"
+              />
+            </div>
+            
             {/* Confirm New Password */}
             <div className="flex items-center border border-gray-300 rounded-3xl px-4 py-2 focus-within:ring-1 focus-within:ring-[var(--color-primary)] my-6">
               <FontAwesomeIcon icon={faLock} className="text-primary mr-2" />

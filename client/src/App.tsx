@@ -10,6 +10,9 @@ import LoginScreen from './screens/LoginScreen';
 import RegisterBuyer from './screens/RegisterBuyer';
 import RegisterSeller from './screens/RegisterSeller';
 import ForgotPwdScreen from './screens/ForgotPwdScreen';
+import SellerFeed from './screens/seller/SellerFeed'
+import BuyerFeed from './screens/buyer/BuyerFeed';
+
 
 
 function App() {
@@ -23,6 +26,8 @@ function App() {
       <Route path="/registerBuyer" element={<RegisterBuyer/>}/>
       <Route path="/registerSeller" element={<RegisterSeller/>}/>
       <Route path="/forgotPassword" element={<ForgotPwdScreen/>}/>
+      <Route path="/seller/seller_home" element={<SellerFeed/>}/>
+      <Route path="/buyer/buyer_home" element={<BuyerFeed/>}/>
     </Routes>
     </BrowserRouter>
   );
